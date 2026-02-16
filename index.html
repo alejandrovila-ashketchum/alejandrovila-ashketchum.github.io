@@ -1,212 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leon | Template One</title>
-    <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/leon.css" />
-    <!-- Render All Elements Normally -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Start Header -->
-    <div class="header">
-      <div class="container">
-        <img class="logo" src="images/logo.png" alt="" />
-        <div class="links">
-          <span class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>WowFolio - A Simple & Clean Portfolio Template For Developers</title>
+  <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/32c48e23e828c42a99a37db81e2a91d7c8eed4de/d134a/assets/png/ram-maheshwari.png"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Alejandro Vila</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm">¿Que pasa chavales?</span>
+          <span class="heading-primary__main">
+            Lo primero de todo ¿Como están los máquinas? Espero que muy bien
           </span>
-          <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
       </div>
     </div>
-    <!-- End Header -->
-    <!-- Start Landing Section -->
-    <div class="landing">
-      <div class="intro-text">
-        <h1>Hello There</h1>
-        <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
-      </div>
-    </div>
-    <!-- End Landing Section -->
-    <!-- Start Features -->
-    <div class="features">
-      <div class="container">
-        <div class="feat">
-          <i class="fas fa-magic fa-3x"></i>
-          <h3>Tell Us Your Idea</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
-        </div>
-        <div class="feat">
-          <i class="far fa-gem fa-3x"></i>
-          <h3>We Will Do All The Work</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
-        </div>
-        <div class="feat">
-          <i class="fas fa-globe-asia fa-3x"></i>
-          <h3>Your Product is Worldwide</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
-        </div>
-      </div>
-    </div>
-    <!-- End Features -->
-    <!-- Start Services -->
-    <div class="services" id="services">
-      <div class="container">
-        <h2 class="special-heading">Services</h2>
-        <p>Don't be busy, be productive</p>
-        <div class="services-content">
-          <div class="col">
-            <!-- Start Service -->
-            <div class="srv">
-              <i class="fas fa-palette fa-2x"></i>
-              <div class="text">
-                <h3>Graphic Design</h3>
-                <p>
-                  Graphic design is the process of visual communication and problem-solving using one or more of
-                  typography, photography and illustration.
-                </p>
-              </div>
-            </div>
-            <div class="srv">
-              <i class="fab fa-sketch fa-2x"></i>
-              <div class="text">
-                <h3>UI & UX</h3>
-                <p>
-                  Process of enhancing user satisfaction with a product by improving the usability, accessibility, and
-                  pleasure provided in the interaction.
-                </p>
-              </div>
-            </div>
-            <!-- End Service -->
-          </div>
-          <div class="col">
-            <!-- Start Services -->
-            <div class="srv">
-              <i class="fas fa-vector-square fa-2x"></i>
-              <div class="text">
-                <h3>Web Design</h3>
-                <p>
-                  Web design encompasses many different skills and disciplines in the production and maintenance of
-                  websites.
-                </p>
-              </div>
-            </div>
-            <div class="srv">
-              <i class="fas fa-pencil-ruler fa-2x"></i>
-              <div class="text">
-                <h3>Web Development</h3>
-                <p>
-                  Web development is a broad term for the work involved in developing a web site for the Internet or an
-                  intranet.
-                </p>
-              </div>
-            </div>
-            <!-- End Services -->
-          </div>
-          <div class="col">
-            <div class="image image-column">
-              <img src="images/services.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Services -->
-    <!-- Start Portfolio -->
-    <div class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="special-heading">Portfolio</h2>
-        <p>If you do it right, it will last forever.</p>
-        <div class="portfolio-content">
-          <div class="card">
-            <img src="images/portfolio-1.jpg" alt="" />
-            <div class="info">
-              <h3>Project Here</h3>
-              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/portfolio-2.jpg" alt="" />
-            <div class="info">
-              <h3>Project Here</h3>
-              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" />
-            <div class="info">
-              <h3>Project Here</h3>
-              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Portfolio -->
-    <!-- Start About -->
-    <div class="about">
-      <div class="container">
-        <h2 class="special-heading">About</h2>
-        <p>Less is more work</p>
-        <div class="about-content">
-          <div class="image">
-            <img src="images/about.jpg" alt="" />
-          </div>
-          <div class="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora velit cum non,
-              fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto laudantium!
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About 🦄</span>
+        <span class="heading-secondary__main">
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
+                magni saepe veritatis voluptatum alias fugit. Explicabo
+                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
+                sit amet
+              </span>
             </p>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure exercitationem
-              dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore esse,
-              alias, sed quo officia?
-            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">react</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+              <li class="about__skill">linux</li>
+              <li class="about__skill">react</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+              <li class="about__skill">linux</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">react</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- End About -->
-    <!-- Start Contact -->
-    <div class="contact">
-      <div class="container">
-        <h2 class="special-heading">Contact</h2>
-        <p>We are born to create</p>
-        <div class="info">
-          <p class="label">Feel free to drop us a line at:</p>
-          <a href="mailto:leonagency@mail.com?subject=Contact" class="link">leonagency@mail.com</a>
-          <div class="social">
-            Find Us On Social Networks
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-react-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-sass-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+
+      <li class="skills-showcase__list-item">
+        <i class="devicon-android-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-python-plain"></i>
+      </li>
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the personal and clients projects that I created with the project details
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Project Name
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
+                  labore magni saepe veritatis voluptatum alias fugit.
+                  Explicabo ducimus
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Contact -->
-    <!-- Start Footer -->
-    <div class="footer">&copy; 2021 <span>Leon</span> All Right Reserved</div>
-    <!-- End Footer -->
-  </body>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
