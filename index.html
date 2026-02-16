@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ANANKE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <body>
-    {
-      .banner {
+<head>
+<title>Ananke</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+h1, h2 {
+  color: #1e3a5f;
+}
+
+.menu {
+  background-color: #1e3a5f;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.seccion {
+  padding: 50px;
+  text-align: center;
+}
+
+
+.banner {
   background-color: #4da6ff;
   color: white;
   padding: 60px;
@@ -15,8 +50,8 @@ img {
   width: 150px;
   border-radius: 50%;
   margin-top: 20px;
-  
 }
+
 
 .tarjetas {
   display: flex;
@@ -30,58 +65,89 @@ img {
   width: 200px;
   box-shadow: 2px 2px 5px grey;
 }
-      
-background-color: black;
-h1 {
-  color: white;
-  text-align: center;
+
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-color: white;
-  font-family: Times New Romans;
-  font-size: 20px;
+input, textarea {
+  margin: 10px 0;
+  padding: 8px;
 }
-  </body>
-<style>
-  img { 
-    wigth: 100%;
-  }
-  @media screen and (max-width: 800px) {
+
+button {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16324f;
+}
+
+
+@media screen and (max-width: 800px) {
   .tarjetas {
     flex-direction: column;
     align-items: center;
-</style>
- 
-  </head>
-     
-  <body>
-    <div class="Menu">
-  <a href="#Inicio">Inicio</a>
-  <a href="#Razas">Razas</a>
-  <a href="#Categorías">Categorías</a>
-</div>
-    <div id="inicio" class="banner">
-       
-      <h1>BIENVENIDO HA ANANKE</h1>
-      <img src="Referencia Isotipo del Juego.png" alt="LOGO ANAKE" width="200" heigth="200">
-    <p>Nada es inebitable, lo qeu significa que la única solución
-    es la guerrra.</p>
-    </div>
+  }
+}
 
-    <div id="Razas" class="seccion">
-  <h2>Razas</h2>
+</style>
+</head>
+
+<body>
+
+
+<div class="Menú">
+  <a href="#Inicio">Inicio</a>
+  <a href="#Razas y Categorías">Razas y Categorías</a>
+  <a href="#Contacto">✉ Contacto</a>
+</div>
+
+
+<div id="inicio" class="banner">
+  <h1>Ananke</h1>
+  <p>Bienvenido a una batalla inevitable</p>
+  <img src="Referencia Isotipo del Juego.png" alt="Logo Ananke">
+</div>
+
+
+<div id="Razas y Categoría" class="seccion">
+  <h2>Mis Proyectos</h2>
+
   <div class="tarjetas">
     <div class="tarjeta">
-  <p>Descubre aquí cuales son las razas que se unen a la batalla.</p>
-</div>
-    
-     <div id="Categorías" class="seccion">
-  <h2>Categprías</h2>
-  <p>Conoce todo sobres las categorías que albergan las Razas.</p>
-</div>
-    
-  </body>
+      <h3>Razas</h3>
+      <p>Todas las razas que lucharan en el campo de batalla contigo o contra ti.</p>
+    </div>
 
+    <div class="tarjeta">
+      <h3>Categorías</h3>
+      <p>Cada raza tiene una clasificación que determina el poder unico que posee</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- CONTACTO -->
+<div id="contacto" class="seccion">
+  <h2>Contacto</h2>
+
+  <form>
+    <input type="text" placeholder="Alejandro Vila">
+    <input type="email" placeholder="alejandrovila@campusfp.es">
+    <textarea placeholder="Escribe tu mensaje"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+</div>
+
+</body>
 </html>
- 
